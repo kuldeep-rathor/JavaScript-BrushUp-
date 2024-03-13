@@ -29,4 +29,35 @@ function userLoggedIn (username){
     return `${username} is logged in`;
 }
 // console.log(userLoggedIn());
-console.log(userLoggedIn("Kuldeep"));
+// console.log(userLoggedIn("Kuldeep"));
+
+
+//  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+function calculateCartPrice(val1, val2 ,...num){
+    return num  ;
+}
+// console.log(calculateCartPrice(200 , 400 , 600))
+
+
+const user= {
+    userName : "Kuldeep",
+    price : 199
+}
+
+function handleObject (anyObject){
+    console.log(`The userName is ${anyObject.userName} and the price is ${anyObject.price}`)
+}
+// handleObject(user)
+handleObject({
+    userName : "sam",
+    price:"199"
+})
+
+const newArray = [100 , 200 , 300 , 400];
+
+function returnSecondArray (getArray){
+    return getArray[2];
+}
+// console.log(returnSecondArray(newArray));
+console.log(returnSecondArray([100 , 200, 800 , 900]))
