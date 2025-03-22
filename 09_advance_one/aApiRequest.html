@@ -12,15 +12,15 @@
     data. 4 DONE The operation is complete.
   </body>
   <script>
-    const requestUrl = "https://api.github.com/users/hiteshchoudhary";
+    const requestUrl = "https://catfact.ninja/fact";
     const xhr = new XMLHttpRequest();
     xhr.open("GET", requestUrl);
     xhr.onreadystatechange = function () {
       console.log(xhr.readyState);
       if (xhr.readyState === 4) {
         const data = JSON.parse(this.responseText);
-        console.log(typeof data);
-        console.log(data.followers);
+        // console.log(typeof data);
+        console.log(data.length);
       }
     };
     xhr.send();
